@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :validates]
 
   def index
     @places = Place.all
@@ -16,7 +16,7 @@ class PlacesController < ApplicationController
       redirect_to root_path
     else
       render :new, status: :unprocessable_entity
-    end
+    end 
   end
 
   def show
