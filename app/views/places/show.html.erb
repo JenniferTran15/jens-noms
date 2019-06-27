@@ -35,7 +35,7 @@
 
 
 <br />
-
+<div class="clear"></div>
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
@@ -106,7 +106,6 @@
             <div class="modal-body">
             <%= f.input :picture %>
             <%= f.input :caption %>
-            <%= f.submit "Add an Image", class: 'btn btn-primary' %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -119,15 +118,16 @@
 
   <div class = "clear"></div>
 
-  <h1 class = "photos-title">Photos</h1>
-    <br /><br />
-    <div class = "row">
-      <% @place.photos.each do |photo| %>
-        <div class="col-xs-12 col-sm-6">
-          <%= image_tag photo.picture.url %>
-            <%= photo.caption %>
+    <h1 class = "photos-title">Photos</h1>
+      <br /><br />
+      <div class = "row">
+        <% @place.photos.each do |photo| %>
+          <div class="col-xs-12 col-sm-6">
+            <%= image_tag photo.picture.url %>
+              <%= photo.caption %>
+            </div>
           </div>
-        </div>
-      <% end %>
-    </div> 
+        <% end %>
+      </div>
+  </div> 
 </div>
