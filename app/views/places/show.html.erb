@@ -68,18 +68,29 @@
     </div>
   </div>
 </div>
+
+<div class="col-10 offset-1">
+  <h1 class="float-left">Comments</h1>
+  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+    Add a comment
+  </button>
+</div>
+
+
+<div class="clear"></div>
+
  <!-- Photos Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
-        </div>
-        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-            <div class="modal-body">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
+      </div>
+      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+          <div class="modal-body">
             <%= f.input :picture %>
             <%= f.input :caption %>
           </div>
@@ -95,13 +106,10 @@
 
 
 <div class="col-10 offset-1">
-  <h1 class="float-left">Comments</h1>
+<!--   <h1 class="float-left">Comments</h1>
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a comment
-  </button>
-  <br />
-  <br />
-  <br />
+  </button> -->
   <h1 class="float-left">Photos</h1>
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a photo
