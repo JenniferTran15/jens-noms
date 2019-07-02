@@ -29,12 +29,21 @@ body {
   margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-brand {
-  color: #f3f76c;
+.navbar-inverse .navbar-brand{
+  color: #f3f76c !important;
   font-family: 'open_sansregular', sans-serif;
   font-size: 33px;
   margin-bottom: 0;
 }
+
+/*nav .navbar-inverse .navbar-brand li a{
+  color: #f3f76c;
+  font-family: 'open_sansregular', sans-serif;
+}*/
+
+nav .navbar-nav li a{
+  color: #ccccc8 !important;
+  } 
 
 .invalid-feedback {
   color: #ff3333;
