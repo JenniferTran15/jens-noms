@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-inverse .navbar-brand{
-  color: #b8e8ff !important;
+  color: #e4eef2 !important;
   font-family: 'open_sansregular', sans-serif;
   font-size: 33px;
   margin-bottom: 0;
@@ -88,6 +88,8 @@ blockquote p {
 
 .uploaded-picture {
   text-align: center;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
@@ -110,14 +112,8 @@ blockquote p {
   width: 100%;
   position: absolute;
   left: 0;
-  box-shadow: 0px 0px 3px 6px #2a2a2a;
 }
 
-/*.carousel {
-  box-shadow: 3px 3px 5px 6px #2a2a2a;
-}*/
-
-.uploaded-picture {
-  width: 100%;
-  height: auto;
+.carousel {
+  box-shadow: 0 0px 3px 8px #2a2a2a;
 }
