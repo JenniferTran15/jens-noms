@@ -30,16 +30,11 @@ body {
 }
 
 .navbar-inverse .navbar-brand{
-  color: #f3f76c !important;
+  color: #b8e8ff !important;
   font-family: 'open_sansregular', sans-serif;
   font-size: 33px;
   margin-bottom: 0;
 }
-
-/*nav .navbar-inverse .navbar-brand li a{
-  color: #f3f76c;
-  font-family: 'open_sansregular', sans-serif;
-}*/
 
 nav .navbar-nav li a{
   color: #ccccc8 !important;
@@ -96,7 +91,7 @@ blockquote p {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 450px;
+  height: 450px;
   width: 100%;
 }
 
@@ -115,8 +110,14 @@ blockquote p {
   width: 100%;
   position: absolute;
   left: 0;
+  box-shadow: 0px 0px 3px 6px #2a2a2a;
 }
 
-.carousel {
+/*.carousel {
   box-shadow: 3px 3px 5px 6px #2a2a2a;
+}*/
+
+.uploaded-picture {
+  width: 100%;
+  height: auto;
 }
